@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f1f1f1;
+  background-image: url("https://content.compteco2.com/wp-content/uploads/2016/07/sun-clouds-blue-sky-14641020076am.jpg");
+  background-repeat: no-repeat;
+  webkit-background-size: cover;
+  overflow-y: scroll;
+  height: 100vh;
+  margin: 0;
+}
+
+.weatherCard-container {
+  display: flex;
+  flex-direction: row;
+  width: 420px;
+  margin-left: 35%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.weatherCard-container::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 400px;
+  background: rgba(25, 25, 24, 0.4);
+  box-shadow: 2px 1px 12px rgb(0 0 0 / 20%), 33px -19px 8px rgb(0 0 0 / 20%);
+  color: #fff;
+  border-radius: 20px;
+  border: 3px solid #fff;
+  margin: 10vh;
+  padding: 15px 15px;
+}
+
+.date {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.header h1 {
+  position: absolute;
+  top: 34vh;
+  right: 30vh;
+  font-size: 130px;
+  font-weight: 100;
+}
+
+.header button {
+  position: absolute;
+  top: 70vh;
+  right: 30vh;
+}
+
+p {
+  font-size: 15px;
+}
+
+img {
+  margin-left: 130px;
+  width: 110px;
+}
+.inputLocation {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+}
+.search {
+  text-align: center;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  outline: none;
+  height: 50px;
+  display: 16px;
+  color: #fff;
+  width: 390px;
+}
+
+input::placeholder {
+  font-size: 1.5rem;
+  color: black;
+}
+
+button {
+  background-color: rgba(24, 24, 23, 0.4);
+  color: #fff;
+  border-radius: 5px;
+  height: 35px;
+  width: 200px;
+  cursor: pointer;
+}
